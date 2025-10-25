@@ -9,9 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.16",
+    "axios": "^1.6.0",
+    "dayjs": "^1.11.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "axios": "^1.6.0"
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.9.4",
+    "tailwindcss": "^4.1.16"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.2.1",
