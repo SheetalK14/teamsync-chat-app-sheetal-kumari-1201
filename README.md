@@ -124,8 +124,7 @@ frontend/
    backend/npm run dev && frontend/npm run dev
    ```
 
-   Visit **[http://localhost:5173](http://localhost:5173)** (or your configured port).
-
+  
 ---
 
 ##  Navigation
