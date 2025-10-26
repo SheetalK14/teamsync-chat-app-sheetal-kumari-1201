@@ -1,17 +1,68 @@
 
 ---
 
-# TeamSync Chat App
+# TeamSync AI
 
 ## Project Overview
 
-**TeamSync Chat App** is a lightweight web-based communication platform for teams to collaborate efficiently. It integrates an AI assistant that summarizes daily discussions and suggests actionable follow-ups, reducing information overload and improving productivity. The app supports real-time messaging, file sharing, and AI-driven insights for smarter team coordination.
+**TeamSync AI** is a lightweight, AI-powered team management app designed to help teams stay organized, track progress, and reduce communication chaos. It combines task management, AI-generated summaries, and scheduling — all in one intuitive interface.
+
+---
+
+## Overview
+
+Teams often face challenges in managing their tasks across scattered platforms like chat, emails, and notes. **TeamSync AI** solves this by providing a unified space to:
+
+* Add, track, and organize tasks.
+* Generate actionable insights using AI.
+* Manage schedules with clarity.
+
+This project is built with **React**, **TailwindCSS**, and **React Router**, delivering a futuristic and interactive UI experience.
 
 ---
 
 ## Problem Statement
 
-In modern workplaces, teams struggle to keep track of discussions across multiple chat threads, leading to lost information and missed action items. Manual summarization is time-consuming and often incomplete. **TeamSync Chat App** addresses this problem by providing an AI-powered chat platform that organizes conversations, generates daily summaries, and highlights key tasks, helping teams stay aligned and save valuable time.
+> Teams struggle to track tasks and discussions efficiently.
+> Deadlines and action items get lost across tools.
+> There’s a need for a lightweight, AI-powered assistant to maintain clarity and productivity.
+
+**Challenges Identified:**
+
+* Scattered tasks across multiple tools.
+* Missed action items or deadlines.
+* Lack of summarized view for decision-making.
+
+---
+
+## Our Approach
+
+TeamSync AI addresses these pain points through three core features:
+
+### Agile Task Board
+
+> Manage and visualize tasks dynamically.
+
+* Add tasks easily (e.g., “To Do” / “Done” view).
+* View and edit detailed task descriptions.
+* Experience real-time updates without page reloads.
+
+### 🤖 AI-Powered Assistant
+
+> Let AI handle summaries and task creation.
+
+* Generates **actionable tasks** automatically.
+* Summarizes ongoing activities.
+* Prioritizes important tasks and deadlines.
+* Acts as a **personal productivity partner** for teams.
+
+### Task Scheduler
+
+> Stay on top of deadlines and workloads.
+
+* Tracks due dates and progress visually.
+* Syncs with AI-generated insights.
+* Helps plan daily and weekly workflows.
 
 ---
 
@@ -23,18 +74,16 @@ We built **TeamSync**, a web-based chat platform with an integrated AI assistant
 * Automatically generate daily summaries of discussions.
 * Receive suggested follow-up tasks based on conversation context.
 
-The system uses a **FastAPI backend**, **React frontend**, **FAISS for vector search**, and **OpenAI GPT-4** for AI-generated summaries.
-
 ---
 
 ## Tech Stack
 
-* **Backend:** Python, FastAPI
-* **Frontend:** React, HTML, CSS
-* **Database / Vector DB:** PostgreSQL, FAISS
-* **LLM / AI Models:** OpenAI GPT-4
-* **Cloud / Hosting:** Render / Vercel
-* **Version Control:** Git + GitHub
+*  Category           | Tools / Libraries               |
+| ------------------ | -------------------------------- |
+| *Frontend*       | React.js, React Router DOM         |
+| *UI Styling*     | TailwindCSS                        |
+| *Icons*          | React Icons (AI Outline Series)    |
+| *AI Integration* | (Gemiini apis)                     |
 
 ---
 
@@ -56,26 +105,38 @@ frontend/
 
 ## Setup Instructions (with Conda)
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/<your-username>/teamsync-chat-app.git
-cd teamsync-chat-app
+1. **Clone the Repository**
 
-# 2. Create and activate conda environment
-conda create -n teamsync python=3.10 -y
-conda activate teamsync
+   ```bash
+   git clone https://github.com/your-username/teamsync-ai.git
+   cd teamsync-ai
+   ```
 
-# 3. Install backend dependencies
-pip install -r requirements.txt
+2. **Install Dependencies**
 
-# 4. Run the backend
-uvicorn app.main:app --reload
+   ```bash
+   npm install
+   ```
 
-# 5. Setup and run frontend
-cd frontend
-npm install
-npm start
-```
+3. **Run the Application**
+
+   ```bash
+   backend/npm run dev && frontend/npm run dev
+   ```
+
+   Visit **[http://localhost:5173](http://localhost:5173)** (or your configured port).
+
+---
+
+##  Navigation
+
+| Page          | Path         | Description                     |
+| ------------- | ------------ | ------------------------------- |
+| **Home**      | `/home`          | Introduction and overview       |
+| **Dashboard** | `/` | Displays all team tasks         |
+| **Add Task**  | `/add-task`  | Add new items to the task board |
+
+---
 
 ---
 
@@ -83,8 +144,6 @@ npm start
 
 **Live Demo URL:**
 `https://teamsync-chat-app-sheetal-kumari-1201-1.onrender.com/`
-
-> If not deployed, the app can be run locally using the setup steps above.
 
 ---
 
