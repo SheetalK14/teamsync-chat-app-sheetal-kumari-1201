@@ -2,7 +2,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Dashboard from "./pages/Dashboard.jsx";
-import AddTask from "./pages/AddTask.jsx";
+import AddTask from "./pages/AddTask,jsx";
 import Home from "./pages/Home.jsx";
 
 function App() {
