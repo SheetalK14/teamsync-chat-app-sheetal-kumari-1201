@@ -47,7 +47,7 @@ TeamSync AI addresses these pain points through three core features:
 * View and edit detailed task descriptions.
 * Experience real-time updates without page reloads.
 
-### 🤖 AI-Powered Assistant
+### AI-Powered Assistant
 
 > Let AI handle summaries and task creation.
 
